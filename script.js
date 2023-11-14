@@ -2,7 +2,7 @@ const btn = document.getElementById('button') ;
 const input = document.querySelector('input#input') ;
 const images = document.querySelector('.images ') ;
 const API = 'https://api.openai.com/v1/images/generations';
-const key = "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"
+const key = "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"
 
 
 
