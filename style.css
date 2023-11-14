@@ -84,6 +84,8 @@ body{
 }
 .images > div img{
     width: 100%;
+    border-radius: 7px;
+    display: block;
 }
 
 .propmt{
