@@ -2,7 +2,7 @@ const btn = document.getElementById('button') ;
 const input = document.querySelector('input#input') ;
 const images = document.querySelector('.images ') ;
 const API = 'https://api.openai.com/v1/images/generations';
-const key = "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"
+const apiKey = "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"
 
 
 
@@ -12,7 +12,7 @@ const methods =
         method:"POST",
         headers:{
             "Content-Type":"application/json",
-            "Authorization" : `Bearer ${key}`
+            "Authorization" : `Bearer ${apiKey}`
         },
         body:JSON.stringify({
             "prompt":input.value || "cats",
