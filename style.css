@@ -1,0 +1,134 @@
+:root{
+    --main_color:#0f0f0f;
+    --second_color:#272727;
+    --white_color:#f1f1f1;
+    /* #272727 */
+    --gray_color:#606060; 
+    --gray_line:#2b2b2b;
+    --blue_dodger:#3EA6FF;
+    /* #00142B */
+    /* #04224D */
+    --blue_oxford:#00142B;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    background-color: var(--main_color);
+}
+
+/* font size system */
+/* 14 16 18 24 32 64 */
+
+::-webkit-scrollbar{
+    width: 10px;
+    border-radius: 20px;
+    background-color: var(--second_color);
+}
+
+/* ::-webkit-scrollbar-track{} */
+
+::-webkit-scrollbar-thumb{
+    border-radius: 20px;
+    background-color: var(--blue_oxford);
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+}
+
+/* .header{} */
+
+.header .title{
+    font-size: 32px;
+    font-weight: 700;
+    padding: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--white_color);
+}
+
+.header .controls{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: var(--second_color);
+    padding: 5px;
+    border-radius: 7px;
+    
+}
+
+.images{
+    display:grid;
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+    gap: 3px;
+    overflow: auto;
+    width: 100%;
+    height: 320px;
+    border-radius: 7px;
+    margin: 20px 0;
+    background-color: var(--gray_color);
+}
+
+.images > div{
+    min-height: 300px;
+    margin: 3px ;
+    border-radius: 7px;
+    background-color: var(--second_color);
+}
+.images > div img{
+    width: 100%;
+}
+
+.propmt{
+    display: flex;
+    flex-direction: row;
+    gap: 7px;
+    width: 100%;
+    padding: 10px;
+    background-color: var(--second_color);
+    border-radius: 7px;
+}
+
+.propmt .input, .button{
+    border: none;
+    padding: 10px;
+    border-radius: 7px;
+    font-size: 16px;
+    font-weight: 300;
+    
+}
+
+.propmt .input{
+    flex-basis: 75%;
+    outline: none;
+    color: var(--white_color);
+    background-color: var(--main_color);
+}
+
+.propmt .button{
+    flex-basis: 25%;
+    cursor: pointer;
+    border: 2px solid var(--gray_color);
+    color: var(--blue_dodger);
+    background-color: var(--main_color);
+    transition: .3s;
+}
+
+.propmt .button:hover{
+    background-color: var(--blue_dodger);
+    color: var(--blue_oxford);
+    border-color:var(--blue_oxford) ;
+}
+
+@media (max-width:679px) {
+    .container{
+        width: 90%;
+    }
+}
