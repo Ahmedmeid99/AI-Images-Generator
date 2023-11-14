@@ -15,7 +15,7 @@ const methods =
             "Authorization" : `Bearer ${key}`
         },
         body:JSON.stringify({
-            "prompt":(input.value) || "cats",
+            "prompt":input.value || "cats",
             "n":3,
             "size":"256x256"
         })
